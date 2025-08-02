@@ -1,8 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AgentSync
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) that includes authentication with email/password and OAuth providers (Google and GitHub).
 
 ## Getting Started
 
-First, run the development server:
+### Setup Environment Variables
+
+1. Copy the `.env.local.example` file to `.env.local`:
+
+```bash
+cp .env.local.example .env.local
+```
+
+2. Update the environment variables in `.env.local` with your own values:
+
+- Generate a random string for `AUTH_SECRET`
+- Set up OAuth providers:
+  - For Google OAuth: Create a project in the [Google Cloud Console](https://console.cloud.google.com/), set up OAuth credentials, and add the client ID and secret
+  - For GitHub OAuth: Create a new OAuth app in [GitHub Developer Settings](https://github.com/settings/developers), and add the client ID and secret
+- Add your database connection URL
+
+### Database Setup
+
+This project uses Drizzle ORM with PostgreSQL. Set up your database and run migrations:
+
+```bash
+npm run db:push
+```
+
+### Run the Development Server
 
 ```bash
 npm run dev

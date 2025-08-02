@@ -11,6 +11,8 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@dicebear/collection": "^9.2.3",
+    "@dicebear/core": "^9.2.3",
     "@hookform/resolvers": "^5.2.1",
     "@neondatabase/serverless": "^1.0.0",
     "@radix-ui/react-accordion": "^1.2.11",
@@ -36,6 +38,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
     "@radix-ui/react-tabs": "^1.1.12",
+    "@radix-ui/react-toast": "^1.2.14",
     "@radix-ui/react-toggle": "^1.1.9",
     "@radix-ui/react-toggle-group": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.7",
@@ -55,6 +58,7 @@
     "react-day-picker": "^9.8.1",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.61.1",
+    "react-icons": "^5.5.0",
     "react-resizable-panels": "^3.0.4",
     "recharts": "^2.15.4",
     "sonner": "^2.0.6",
