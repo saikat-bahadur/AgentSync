@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
-import { authClient } from '@/lib/auth.client';
-import { Button } from '@/components/ui/button';
-import { useEffect } from 'react';
+import { useRouter } from "next/navigation";
+import { authClient } from "@/lib/auth.client";
+import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 export const HomeView = () => {
   const router = useRouter();
@@ -11,7 +11,7 @@ export const HomeView = () => {
 
   useEffect(() => {
     if (!isPending && !session) {
-      router.push('/sign-in');
+      router.push("/sign-in");
     }
   }, [isPending, session, router]);
 
@@ -31,7 +31,7 @@ export const HomeView = () => {
           authClient.signOut({
             fetchOptions: {
               onSuccess: () => {
-                router.push('/sign-in');
+                router.push("/sign-in");
               },
             },
           })
