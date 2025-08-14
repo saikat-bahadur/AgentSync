@@ -445,12 +445,15 @@
     animation: spin 40s linear infinite;
     z-index: -1;
   }
-  */ * {
-    /* stylelint-disable-next-line at-rule-no-unknown */
+
+
+@layer base {
+  * {
     @apply border-border outline-ring/50;
   }
   body {
-    /* stylelint-disable-next-line at-rule-no-unknown */
     @apply bg-background text-foreground;
   }
+}
+
 }

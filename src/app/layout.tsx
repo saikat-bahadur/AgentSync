@@ -4,7 +4,8 @@ import {TRPCReactProvider} from "@/trpc/client";
 import "./globals.css";
 
 const inter = Inter({
-  subsets: ["latin"],
+   variable: "--font-geist-sans",
+subsets: ["latin"],
 });
 
 
