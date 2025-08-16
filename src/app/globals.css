@@ -456,4 +456,11 @@
   }
 }
 
+@layer base{
+  button:not(:disable),
+  [role="button"]:not(:disable)
+{
+  cursor:pointer,
+}}
+
 }
